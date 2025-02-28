@@ -45,7 +45,7 @@ const App = () => {
   ]);
 
   return (
-    <ProductsContext.Provider value={{products, cart, addToCart}}>
+    <ProductsContext.Provider value={{products, cart, addToCart, setCart}}>
       <RouterProvider router={router} />
     </ProductsContext.Provider>
   );

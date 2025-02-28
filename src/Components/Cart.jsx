@@ -3,8 +3,12 @@ import { ProductsContext } from "./App";
 import "../styles/Cart.css";
 
 export default function Cart({ closeCart }) {
-  const { cart } = useContext(ProductsContext); // Get cart items
+  const { cart, setCart } = useContext(ProductsContext); // Get cart items
 
+  const handleCheckout = () => {
+    setCart([]);
+  };
+  
   return (
     <aside className="show">
       <div>
@@ -22,7 +26,7 @@ export default function Cart({ closeCart }) {
               <p>Quantity: {item.quantity}</p> {/* Show quantity */}
             </div>
           ))}
-          <button>Check Out</button>
+          <button onClick={handleCheckout}>Check Out</button>
         </div>
       ) : (
         <p>Your cart is empty.</p>
