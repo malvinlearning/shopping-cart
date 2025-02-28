@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { ProductsContext } from "./App";
 import "../styles/ShopPage.css";
 
-export default function ShopPage({ products }) {
+export default function ShopPage() {
+  const products = useContext(ProductsContext); // Get products from context
+
   return (
     <section>
       <h2>Shop</h2>
