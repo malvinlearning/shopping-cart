@@ -1,0 +1,33 @@
+[
+    {
+      "id": 1,
+      "name": "Dunk Red",
+      "price": 190,
+      "image": "./images/1.png"
+    },
+    {
+      "id": 2,
+      "name": "Dunk Purple",
+      "price": 210,
+      "image": "/images/2.png"
+    },
+    {
+        "id": 3,
+        "name": "Dunk Orange",
+        "price": 250,
+        "image": "/images/3.png"
+      },
+      {
+        "id": 4,
+        "name": "Jordan 1",
+        "price": 210,
+        "image": "/images/4.png"
+      },
+      {
+        "id": 5,
+        "name": "Dunk Pink",
+        "price": 240,
+        "image": "/images/5.png"
+      }
+  ]
+  
