@@ -1,7 +1,7 @@
 .mainPage-section {
     width: 100%;
 }
-.mainPage-section div {
+.mainPage-section .product-grid {
     width: 100%;
     height: 100%;
     display: grid;
@@ -46,4 +46,25 @@
     font-size: 20px;
     padding: 0;
     color: #222;
+}
+
+.mainPage-section .product-grid .card .price-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mainPage-section .product-grid .card .price-button button {
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 430px) {
+    .mainPage-section .product-grid {
+        grid-template-columns: repeat(1, 1fr); 
+    }
 }
