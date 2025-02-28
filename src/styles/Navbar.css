@@ -52,3 +52,7 @@ a:hover {
     transform: scale(1.2);
     color: orange;
 }
+
+.cart-button {
+    all: unset;
+}

@@ -6,8 +6,8 @@ export default function ShopPage() {
   const products = useContext(ProductsContext); // Get products from context
 
   return (
-    <section>
-      <h2>Shop</h2>
+    <section className="shop-section">
+      <h2>Shop Now</h2>
       <div className="shop-grid">
         {products.map((product) => (
           <div key={product.id} className="card">

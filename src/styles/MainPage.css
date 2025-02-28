@@ -1,7 +1,7 @@
-section {
+.mainPage-section {
     width: 100%;
 }
-section div {
+.mainPage-section div {
     width: 100%;
     height: 100%;
     display: grid;
@@ -11,7 +11,7 @@ section div {
     padding: 1rem;
 }
 
-section div .card {
+.mainPage-section div .card {
     width: 100%;
     height: 100%;
     display: flex;
@@ -23,9 +23,10 @@ section div .card {
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-section h1 {
+.mainPage-section h2 {
     padding: 0.5rem 1rem;
-    text-align: start;
+    margin-top: 1rem;
+    text-align: end;
 }
 
 .card:hover {
@@ -33,10 +34,9 @@ section h1 {
 }
 
 /* Product Image */
-section div .card img {
+.mainPage-section div .card img {
     width: 100%; /* Make the image grow */
-    height: 150px; /* Maintain aspect ratio */
-    max-height: 100vh; /* Prevent the image from exceeding the viewport height */
+    max-height: 150px; /* Maintain aspect ratio */
     object-fit: contain; /* Ensure the image scales properly */
 }
 

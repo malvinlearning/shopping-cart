@@ -4,9 +4,9 @@ import "../styles/MainPage.css";
 
 export default function MainPage() {
   const products = useContext(ProductsContext); // Get products from context
-
+  
   return (
-    <section>
+    <section className="mainPage-section">
       <h2>Featured Products</h2>
       <div className="product-grid">
         {products.slice(0, 4).map((product) => (

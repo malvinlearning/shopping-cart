@@ -1,0 +1,44 @@
+/* Cart styling */
+aside {
+    position: absolute ; /* Or absolute, depending on where you want it */
+    top: 0;
+    right: 0;
+    min-width: 300px;
+    height: 100vh;
+    background-color: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensure it appears above other elements */
+    padding: 1rem;
+    opacity: 0;
+    transition: opacity 2s ease, transform 2s ease;
+    /* You can also use translateY for a slide-in effect */
+    transform: translateY(-20px);
+}
+  
+aside button {
+    cursor: pointer;
+    background-color: orange;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 20px;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+aside div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside div .close {
+    cursor: pointer;
+    padding: 0.2rem 0.5rem;
+    border: 2px solid orange;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+  

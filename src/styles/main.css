@@ -8,6 +8,9 @@
 body {
     max-width: 1200px; /* Adjust based on your design */
     width: 100%; /* Keeps content flexible */
+    height: 100vh;
     margin: 0 auto; /* Centers the content */
 }
+
+
   
